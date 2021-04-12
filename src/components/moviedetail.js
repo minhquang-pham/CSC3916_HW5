@@ -24,7 +24,7 @@ class MovieDetail extends Component {
                 <Card>
                     <Card.Header>Movie Detail</Card.Header>
                     <Card.Body>
-                        <Image className="image" src={this.props.selectedMovie.imageUrl} thumbnail />
+                        <Image className="image" src={this.props.selectedMovie.imageURL} thumbnail />
                     </Card.Body>
                     <ListGroup>
                         <ListGroupItem>{this.props.selectedMovie.title}</ListGroupItem>
@@ -39,8 +39,8 @@ class MovieDetail extends Component {
                     <Card.Body>
                         {this.props.selectedMovie.reviews.map((review, i) =>
                             <p key={i}>
-                                <b>{review.username}</b>&nbsp; {review.review}
-                                &nbsp;  <BsStarFill /> {review.rating}
+                                <b>{review.author}</b>&nbsp; {review.review}
+                                &nbsp;  <BsStarFill /> {review.score}
                             </p>
                         )}
                     </Card.Body>
