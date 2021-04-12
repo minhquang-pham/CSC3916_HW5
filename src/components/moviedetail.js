@@ -31,7 +31,7 @@ class MovieDetail extends Component {
                         <ListGroupItem>
                             {this.props.selectedMovie.actors.map((actor, i) =>
                                 <p key={i}>
-                                    <b>{actor.actorName}</b> {actor.characterName}
+                                    <b>{actor.ActorName}</b> {actor.CharacterName}
                                 </p>)}
                         </ListGroupItem>
                         <ListGroupItem><h4><BsStarFill/> {this.props.selectedMovie.avgRating}</h4></ListGroupItem>
